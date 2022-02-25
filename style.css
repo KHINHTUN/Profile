@@ -15,6 +15,10 @@
 .intro {
   padding-top: 6rem;
 }
+.title {
+  letter-spacing: 0.5em;
+}
+
 .profile {
   position: relative;
   border-radius: 35% 65% 57% 43% / 31% 45% 55% 69%;
@@ -28,16 +32,22 @@
   background-color: rgb(233, 233, 233);
   transition: all 5s ease-out;
 }
+
 .card:hover {
   opacity: 0;
   transform: scale(0);
 }
 
-.card-body {
+.card-overlay {
+  background-color: rgb(82, 82, 82);
   position: relative;
   transition: all 1s ease-out;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  z-index: 1;
 }
-.card-body:hover {
+.card-overlay:hover {
   opacity: 0;
   transform: scale(0);
 }
