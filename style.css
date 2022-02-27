@@ -3,6 +3,15 @@
   margin: 0;
   box-sizing: border-box;
 }
+:root {
+  --fb: #0f90f3;
+  --fb-bg: #0f90f399;
+  --github: #6e5494;
+  --github-bg: #6e549499;
+  --linkedin: #0a66c2;
+  --linkedin-bg: #0a66c299;
+  --icons-hover-bg: #d4d0d08c;
+}
 .container {
   padding: 2rem;
 }
@@ -12,6 +21,16 @@
   flex-direction: column;
   justify-content: center;
 }
+.arrow {
+  transform: rotate(360deg) translateY(4.9rem) translateX(-0.3rem);
+}
+.arrow:hover {
+  transition: ease-out;
+}
+.arrow-1 {
+  transform: rotate(360deg) translateY(6.5rem) translateX(-0.2rem);
+}
+
 .intro {
   padding-top: 6rem;
 }
@@ -34,20 +53,105 @@
 }
 .card {
   background-color: rgb(211, 211, 211);
-  width: 200px;
-  height: 150px;
+  height: 140px;
   border-radius: 5%;
   overflow: hidden;
   position: relative;
 }
+.circle {
+  background-color: var(--fb-bg);
+  border-radius: 51% 49% 64% 36% / 53% 42% 58% 47%;
+  height: 80px;
+  width: 70px;
+  transform: translateX(-1.9rem);
+  transform: translateY(-4.5rem);
+  z-index: -1;
+  opacity: 1;
+}
+.circle1 {
+  background-color: var(--linkedin-bg);
+  border-radius: 51% 49% 64% 36% / 53% 42% 58% 47%;
+  height: 80px;
+  width: 70px;
+  transform: translateX(-1.9rem);
+  transform: translateY(-4.5rem);
+  z-index: -1;
+  opacity: 1;
+}
+.circle2 {
+  background-color: var(--github-bg);
+  border-radius: 51% 49% 64% 36% / 53% 42% 58% 47%;
+  height: 80px;
+  width: 70px;
+  transform: translateX(-1.9rem);
+  transform: translateY(-4.5rem);
+  z-index: -1;
+  opacity: 1;
+}
+.stcircle {
+  background-color: var(--fb);
+  font-size: larger;
+  height: 80px;
+  width: 90px;
+  border-radius: 50% 50% 46% 54% / 51% 51% 49% 49%;
+}
+.gitcircle {
+  background-color: var(--github-bg);
+  height: 80px;
+  width: 90px;
+  border-radius: 47% 53% 46% 54% / 65% 55% 45% 35%;
+  transform: translate(10rem, 13rem);
+}
+.imgcircle {
+  background-color: var(--fb-bg);
+  height: 100px;
+  width: 100px;
+  border-radius: 55% 45% 71% 29% / 44% 53% 47% 56%;
+  transform: translate(23rem, -12rem);
+}
+.imgcircle1 {
+  background-color: var(--linkedin-bg);
+  height: 120px;
+  width: 120px;
+  border-radius: 64% 36% 52% 48% / 40% 34% 66% 60%;
+  transform: translate(35rem, -1.5rem);
+}
+.imgcircle2 {
+  background-color: var(--linkedin-bg);
+  height: 50px;
+  width: 60px;
+  border-radius: 39% 61% 53% 47% / 39% 47% 53% 61%;
+  transform: translate(44rem, -12rem);
+}
+.workcircle {
+  position: absolute;
+  height: 55px;
+  width: 50px;
+  background-color: rgb(247, 91, 176);
+  border-radius: 39% 61% 57% 43% / 37% 47% 53% 63%;
+  transform: translate(37.3rem, 2rem);
+  z-index: -1;
+  opacity: 1;
+}
+.oval {
+  position: absolute;
+  background-color: var(--linkedin-bg);
+  border-radius: 37% 63% 46% 54% / 40% 27% 73% 60%;
+  height: 500px;
+  width: 500px;
+  z-index: -1;
+  opacity: 1;
+  transform: translate(46rem, -16.5rem);
+}
+
 .card-overlay {
-  font-size: small;
+  font-size: medium;
   display: block;
   position: absolute;
   top: 0%;
   left: 0;
   width: 100%;
-  color: white;
+  color: rgb(14, 14, 14);
   background-color: rgb(54, 54, 54);
   height: 100%;
   opacity: 1;
@@ -56,5 +160,9 @@
 }
 .card > img {
   width: 100%;
-  height: 120%;
+  height: 150%;
+}
+.more {
+  transform: translateY(-4.3rem);
+  background: rgba(43, 42, 42, 0.247);
 }
