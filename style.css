@@ -206,7 +206,7 @@
     flex-direction: column;
   }
   .profile {
-    transform: translate(22rem, -35rem);
+    transform: translate(-2rem, 4rem);
   }
   .oval {
     transform: translate(28rem, -14rem);
@@ -219,15 +219,6 @@
 }
 
 /*  XX-Large devices (larger desktops, 1400px and up) */
-@media (max-width: 768px) {
-  .container {
-    display: flex;
-    flex-direction: column;
-  }
-  .profile {
-    transform: translate(-1rem, -1rem);
-  }
-}
 
 /* X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 500px) {
