@@ -12,9 +12,6 @@
   --linkedin-bg: #0a66c299;
   --icons-hover-bg: #d4d0d08c;
 }
-.container {
-  padding: 2rem;
-}
 
 .icon {
   display: flex;
@@ -49,10 +46,17 @@
 }
 
 .text-1 {
+  font-size: 15px;
+  padding: 2px;
   background-color: rgb(207, 207, 207);
 }
-.card {
-  background-color: rgb(211, 211, 211);
+.text-2 {
+  font-size: 15px;
+  padding: 2px;
+  background-color: rgb(207, 207, 207);
+}
+.image {
+  background-color: rgb(117, 117, 117);
   height: 140px;
   border-radius: 5%;
   overflow: hidden;
@@ -144,25 +148,91 @@
   transform: translate(46rem, -16.5rem);
 }
 
-.card-overlay {
-  font-size: medium;
-  display: block;
-  position: absolute;
-  top: 0%;
-  left: 0;
-  width: 100%;
-  color: rgb(14, 14, 14);
-  background-color: rgb(54, 54, 54);
-  height: 100%;
-  opacity: 1;
-  z-index: 1;
-  align-items: flex-end;
-}
-.card > img {
-  width: 100%;
-  height: 150%;
-}
 .more {
-  transform: translateY(-4.3rem);
-  background: rgba(43, 42, 42, 0.247);
+  transform: translateY(-3.3rem);
+  background: rgba(231, 229, 229, 0.247);
+}
+.start {
+  height: 100%;
+  width: 100%;
+}
+
+@media (max-width: 894px) {
+  .header2 {
+    transform: translate(9rem);
+  }
+  .container {
+    transform: translate(5rem);
+  }
+  .header3 {
+    transform: translate(14rem);
+    display: flex;
+    flex-direction: row;
+  }
+  .intro {
+    font-size: large;
+  }
+  .container {
+    height: 100vh;
+  }
+  .tec-t {
+    font-size: medium;
+    padding-top: 1rem;
+  }
+  .wd-d {
+    padding-top: 3rem;
+  }
+
+  .text-2 {
+    transform: translate(11.5rem, -6rem);
+  }
+}
+
+/*  Large devices (desktops, 992px and up) */
+@media (max-width: 829px) {
+  .header3 {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (max-width: 768px) {
+  .title {
+    letter-spacing: 0.3em;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .profile {
+    transform: translate(22rem, -35rem);
+  }
+  .oval {
+    transform: translate(28rem, -14rem);
+  }
+  .intro {
+    font-size: medium;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+      sans-serif;
+  }
+}
+
+/*  XX-Large devices (larger desktops, 1400px and up) */
+@media (max-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .profile {
+    transform: translate(-1rem, -1rem);
+  }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 500px) {
+}
+
+/*  XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
 }
