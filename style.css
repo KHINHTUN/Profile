@@ -13,26 +13,22 @@
   --icons-hover-bg: #d4d0d08c;
 }
 
-.icon {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
 .arrow {
-  transform: rotate(360deg) translateY(4.9rem) translateX(-0.3rem);
+  transform: translateY(3.9rem) translateX(-0.3rem);
 }
 .arrow:hover {
-  transition: ease-out;
+  transition: all 5s ease-in-out;
+  transform: translateX(0.01px);
 }
 .arrow-1 {
-  transform: rotate(360deg) translateY(5.9rem) translateX(-0.2rem);
+  transform: translateY(4rem) translateX(-0.2rem);
 }
-
-.intro {
-  padding-top: 6rem;
+.arrow-1:hover {
+  transition: all 5s ease-in-out;
+  transform: translateX(0.01px);
 }
 .title {
-  letter-spacing: 0.5em;
+  letter-spacing: 0.3em;
 }
 
 .profile {
@@ -40,85 +36,89 @@
   border-radius: 35% 65% 57% 43% / 31% 45% 55% 69%;
   height: 20rem;
   width: 20rem;
-}
-.header2 {
-  padding: 3rem;
+  object-fit: cover;
 }
 
 .text-1 {
   font-size: 15px;
-  padding: 2px;
-  background-color: rgb(207, 207, 207);
+  background-color: rgba(126, 126, 126, 0.089);
 }
 .text-2 {
   font-size: 15px;
-  padding: 2px;
-  background-color: rgb(207, 207, 207);
+  background-color: rgba(126, 126, 126, 0.089);
 }
 .image {
   background-color: rgb(117, 117, 117);
-  height: 140px;
+  height: 100%;
+  width: 100%;
   border-radius: 5%;
   overflow: hidden;
   position: relative;
 }
 .circle {
-  background-color: var(--fb-bg);
+  background-color: #fc193b70;
   border-radius: 51% 49% 64% 36% / 53% 42% 58% 47%;
-  height: 80px;
-  width: 70px;
-  transform: translateX(-1.9rem);
-  transform: translateY(-4.5rem);
-  z-index: -1;
-  opacity: 1;
+  padding: 0 0.5rem 0.5rem 0.5rem;
+  width: fit-content;
 }
+.circle:hover {
+  color: #bb001b;
+  background-color: var(--icon-hover-bg);
+}
+
 .circle1 {
   background-color: var(--linkedin-bg);
   border-radius: 51% 49% 64% 36% / 53% 42% 58% 47%;
-  height: 80px;
-  width: 70px;
-  transform: translateX(-1.9rem);
-  transform: translateY(-4.5rem);
-  z-index: -1;
-  opacity: 1;
+  padding: 0 0.5rem 0.5rem 0.5rem;
+  width: fit-content;
 }
+.circle1:hover {
+  color: var(--linkedin-bg);
+  background-color: var(--icon-hover-bg);
+}
+
 .circle2 {
   background-color: var(--github-bg);
   border-radius: 51% 49% 64% 36% / 53% 42% 58% 47%;
-  height: 80px;
-  width: 70px;
-  transform: translateX(-1.9rem);
-  transform: translateY(-4.5rem);
-  z-index: -1;
-  opacity: 1;
+  padding: 0 0.5rem 0.5rem 0.5rem;
+  width: fit-content;
 }
+.circle2:hover {
+  color: var(--github-bg);
+  background-color: var(--icon-hover-bg);
+}
+
 .stcircle {
   background-color: var(--fb);
   font-size: larger;
-  height: 80px;
-  width: 90px;
   border-radius: 50% 50% 46% 54% / 51% 51% 49% 49%;
 }
 .gitcircle {
   background-color: var(--github-bg);
   height: 80px;
   width: 90px;
+  top: 259px;
+  right: -152px;
   border-radius: 47% 53% 46% 54% / 65% 55% 45% 35%;
-  transform: translate(10rem, 13rem);
+  z-index: -1;
+  transform: translate(39rem , -26rem);
 }
+
 .imgcircle {
   background-color: var(--fb-bg);
   height: 100px;
   width: 100px;
+  top: 2rem;
+  right: 100px;
   border-radius: 55% 45% 71% 29% / 44% 53% 47% 56%;
-  transform: translate(23rem, -12rem);
+  transform: translate(64rem , -45rem);
 }
 .imgcircle1 {
   background-color: var(--linkedin-bg);
   height: 120px;
   width: 120px;
   border-radius: 64% 36% 52% 48% / 40% 34% 66% 60%;
-  transform: translate(35rem, -1.5rem);
+  transform: translate(29rem , -45rem);
 }
 .imgcircle2 {
   background-color: var(--linkedin-bg);
@@ -131,72 +131,42 @@
   position: absolute;
   height: 55px;
   width: 50px;
+  top: 7rem;
   background-color: rgb(247, 91, 176);
   border-radius: 39% 61% 57% 43% / 37% 47% 53% 63%;
-  transform: translate(37.3rem, 2rem);
   z-index: -1;
-  opacity: 1;
 }
 .oval {
   position: absolute;
   background-color: var(--linkedin-bg);
   border-radius: 37% 63% 46% 54% / 40% 27% 73% 60%;
-  height: 500px;
-  width: 500px;
+  height: 400px;
+  width: 400px;
+  top: -259px;
+  right: 12px;
   z-index: -1;
-  opacity: 1;
-  transform: translate(46rem, -16.5rem);
 }
 
 .more {
   transform: translateY(-3.3rem);
   background: rgba(231, 229, 229, 0.247);
 }
+.text-eye:hover {
+  transform: translateX(-6px);
+  color: rgb(255, 27, 27);
+}
 .start {
   height: 100%;
   width: 100%;
 }
+.gmail {
+  color: #bb001b;
+}
+.linkedin {
+  color: #0a66c2;
+}
+.github {
+  color: #6e5494;
+}
 
 /*  XX-Large devices (larger desktops, 1400px and up) */
-@media (max-width: 894px) {
-  .tec-t {
-    display: flex;
-    flex-direction: column-reverse;
-  }
-  .wd-d {
-    display: flex;
-    flex-direction: column;
-  }
-  .icon {
-    display: block;
-    position: absolute;
-    flex-direction: row;
-    transform: translate(-3rem, 2rem);
-  }
-  .intro {
-    font-size: small;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
-      'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  }
-  .header {
-    transform: translateX(-6rem);
-  }
-  .oval {
-    transform: translate(20rem, -20rem);
-  }
-}
-@media (max-width: 796px) {
-  .container {
-    display: flex;
-    position: relative;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    transform: translateX(4rem);
-  }
-  .intro {
-    display: flex;
-    flex-direction: column;
-    align-self: center;
-  }
-}
