@@ -14,7 +14,7 @@
 }
 
 .arrow {
-  transform: translateY(3.9rem) translateX(-0.3rem);
+  transform: translateY(2.5rem) translateX(-0.3rem);
 }
 .arrow:hover {
   transition: all 5s ease-in-out;
@@ -56,13 +56,13 @@
   position: relative;
 }
 .circle {
-  background-color: #fc193b70;
+  background-color:var(--fb-bg);
   border-radius: 51% 49% 64% 36% / 53% 42% 58% 47%;
   padding: 0 0.5rem 0.5rem 0.5rem;
   width: fit-content;
 }
 .circle:hover {
-  color: #bb001b;
+  color: var(--fb-bg);
   background-color: var(--icon-hover-bg);
 }
 
@@ -159,7 +159,7 @@
   width: 100%;
 }
 .gmail {
-  color: #bb001b;
+  color: #4285f4;
 }
 .linkedin {
   color: #0a66c2;
