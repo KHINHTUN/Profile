@@ -101,7 +101,7 @@
   right: -152px;
   border-radius: 47% 53% 46% 54% / 65% 55% 45% 35%;
   z-index: -1;
-  transform: translate(39rem , -26rem);
+  transform: translate(39rem, -26rem);
 }
 
 .imgcircle {
@@ -111,21 +111,21 @@
   top: 2rem;
   right: 100px;
   border-radius: 55% 45% 71% 29% / 44% 53% 47% 56%;
-  transform: translate(64rem , -45rem);
+  transform: translate(64rem, -45rem);
 }
 .imgcircle1 {
   background-color: var(--linkedin-bg);
   height: 120px;
   width: 120px;
   border-radius: 64% 36% 52% 48% / 40% 34% 66% 60%;
-  transform: translate(29rem , -45rem);
+  transform: translate(29rem, -45rem);
 }
-.imgcircle2 {
+.imgoval {
   background-color: var(--linkedin-bg);
-  height: 50px;
-  width: 60px;
-  border-radius: 39% 61% 53% 47% / 39% 47% 53% 61%;
-  transform: translate(44rem, -12rem);
+  height: 120px;
+  width: 120px;
+  border-radius: 64% 36% 52% 48% / 40% 34% 66% 60%;
+  transform: translate(45rem, -45rem);
 }
 .workcircle {
   position: absolute;
@@ -153,7 +153,6 @@
 }
 .text-eye:hover {
   transform: translateX(-6px);
-  color: rgb(255, 27, 27);
 }
 .start {
   height: 100%;
